@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VotaPrato</title>
+    <%= stylesheet_link_tag 'scaffold' %>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+	<body>
+    <%= menu_principal %w(restaurantes clientes qualificacoes) %>
+    <%= yield %>
+
+	</body>
+</html>
